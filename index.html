@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womb-Inary.com | Word Choice Matters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Parchment Texture Overlay -->
+    <div class="parchment-overlay"></div>
+
+    <!-- Floating Candle Particles -->
+    <div class="candle-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Hero Section - Full Screen -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img src="assets/headbackground.png" alt="Womb-Inary Library" class="hero-bg-img">
+            <div class="hero-gradient"></div>
+        </div>
+
+        <div class="hero-content">
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="assets/logo.png?v=3" alt="Womb-Inary Crest" class="hero-logo">
+            </div>
+
+            <!-- Brand Name -->
+            <h1 class="brand-name">
+                <span class="brand-womb">Womb</span><span class="brand-dash">-</span><span class="brand-inary">Inary</span><span class="brand-com">.com</span>
+            </h1>
+
+            <!-- Tagline -->
+            <p class="tagline">
+                <em>Word Choice Matters! Let's Play with Dic-tion.</em>
+            </p>
+
+            <!-- Navigation Buttons -->
+            <nav class="nav-buttons-new">
+                <a href="#chat" class="nav-card featured">
+                    <span class="nav-card-symbol">W</span>
+                    <div class="nav-card-content">
+                        <span class="nav-card-title">The Wombinary</span>
+                        <span class="nav-card-desc">Begin a Language Session</span>
+                    </div>
+                </a>
+
+                <div class="nav-secondary">
+                    <a href="dictionary.html" class="nav-link">
+                        <span class="nav-link-symbol">§</span>
+                        <span class="nav-link-text">Dictionary</span>
+                    </a>
+                    <a href="rights.html" class="nav-link">
+                        <span class="nav-link-symbol">⚖</span>
+                        <span class="nav-link-text">Rights</span>
+                    </a>
+                    <a href="events.html" class="nav-link">
+                        <span class="nav-link-symbol">✦</span>
+                        <span class="nav-link-text">Events</span>
+                    </a>
+                    <a href="merch.html" class="nav-link">
+                        <span class="nav-link-symbol">◈</span>
+                        <span class="nav-link-text">Merch</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section class="chat-section" id="chat">
+        <div class="chat-background">
+            <img src="assets/img4.jpg" alt="Study Desk" class="section-bg">
+            <div class="section-gradient"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <h2>Live Language Session</h2>
+                <p>Describe what you're feeling. We'll help you find the words.</p>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-panel">
+                    <div class="chat-header">
+                        <div class="chat-title">
+                            <span class="chat-icon"></span>
+                            <span>Language Session</span>
+                        </div>
+                        <span class="chat-status">Live - Private</span>
+                    </div>
+
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message ai">
+                            <div class="message-avatar">W</div>
+                            <div class="message-content">
+                                <p>Welcome to Womb-inary. I'm here to help you find the right words for what you're experiencing. Tell me how you're feeling, even if it's messy. There's no wrong way to start.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <form id="chatForm" class="chat-form">
+                            <input type="text" id="userInput" placeholder="Describe how you're feeling..." autocomplete="off">
+                            <button type="submit" class="send-button">
+                                <span>Send</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18">
+                                    <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <aside class="chat-sidebar">
+                    <div class="sidebar-panel terms-panel">
+                        <div class="panel-header">
+                            <h3>Term Suggestions</h3>
+                            <span class="term-count" id="termCount">0 matches</span>
+                        </div>
+                        <div class="panel-body" id="termSuggestions">
+                            <p class="empty-state">Share your feelings to discover relevant terms from our lexicon.</p>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-panel notes-panel">
+                        <div class="panel-header">
+                            <h3>Session Notes</h3>
+                            <span class="demo-badge">Demo</span>
+                        </div>
+                        <div class="panel-body">
+                            <p>You're always in control. We only surface words that might help you explain what's happening. This is not a diagnosis - just better language, with care.</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dictionary Preview Section -->
+    <section class="preview-section" id="dictionary-preview">
+        <div class="preview-background">
+            <img src="assets/img5.jpg" alt="Open Dictionary" class="section-bg">
+            <div class="section-gradient"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">Dictionary Preview</span>
+                <h2>Words That Fit</h2>
+                <p>Modern, inclusive language for experiences that deserve better words.</p>
+            </div>
+
+            <div class="preview-grid">
+                <div class="word-card">
+                    <h3>Loopspiraling</h3>
+                    <p class="definition">Replaying a moment until it grows larger than the moment itself.</p>
+                    <span class="word-tag">rumination</span>
+                </div>
+
+                <div class="word-card">
+                    <h3>Carewashing</h3>
+                    <p class="definition">Performing care language without meaningful support or follow-through.</p>
+                    <span class="word-tag">culture</span>
+                </div>
+
+                <div class="word-card">
+                    <h3>Birthgiver</h3>
+                    <p class="definition">Gender-neutral term for someone who gives birth, inclusive of all identities.</p>
+                    <span class="word-tag">identity</span>
+                </div>
+
+                <div class="word-card">
+                    <h3>Scrollfreezing</h3>
+                    <p class="definition">Getting stuck in a feed even when you want to step away.</p>
+                    <span class="word-tag">attention</span>
+                </div>
+
+                <div class="word-card">
+                    <h3>Emotional Labor</h3>
+                    <p class="definition">The invisible work of managing feelings and relationships, often unrecognized.</p>
+                    <span class="word-tag">culture</span>
+                </div>
+
+                <div class="word-card">
+                    <h3>Burnout</h3>
+                    <p class="definition">Complete physical, emotional, and mental exhaustion from prolonged stress.</p>
+                    <span class="word-tag">emotion</span>
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <a href="dictionary.html" class="btn btn-secondary">Explore Full Dictionary</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-background">
+            <img src="assets/img1.jpg" alt="Library Interior" class="section-bg">
+            <div class="section-gradient dark"></div>
+        </div>
+
+        <div class="container">
+            <div class="features-grid">
+                <div class="features-copy">
+                    <span class="section-label">How It Helps</span>
+                    <h2>Gentle Clarity, Not Pressure</h2>
+                    <p>The Wombinary listens for patterns in what you share, then offers language you can use in conversations with yourself and others.</p>
+                    <a href="dictionary.html" class="text-link">Help shape the lexicon <span>&rarr;</span></a>
+                </div>
+
+                <div class="features-list">
+                    <div class="feature-item">
+                        <span class="feature-number">01</span>
+                        <div class="feature-content">
+                            <h3>Reflect the Feeling</h3>
+                            <p>Short, human definitions for what you're experiencing.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-number">02</span>
+                        <div class="feature-content">
+                            <h3>Suggest a Term</h3>
+                            <p>Modern, inclusive language that feels usable in daily life.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span class="feature-number">03</span>
+                        <div class="feature-content">
+                            <h3>Offer a Next Step</h3>
+                            <p>Small options for action or care, never a directive.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="trust-background">
+            <img src="assets/img3.jpg" alt="Library shelves" class="section-bg">
+            <div class="section-gradient dark"></div>
+        </div>
+        <div class="container">
+            <div class="section-header center">
+                <h2>Safety & Care</h2>
+                <p>Womb-inary supports emotional clarity without replacing professional care.</p>
+            </div>
+
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <h3>Private by Default</h3>
+                    <p>This demo does not store your messages.</p>
+                </div>
+
+                <div class="trust-item">
+                    <h3>Not a Diagnosis</h3>
+                    <p>Language and guidance, not medical advice.</p>
+                </div>
+
+                <div class="trust-item">
+                    <h3>Crisis Support</h3>
+                    <p>If in danger, reach out to local services.</p>
+                </div>
+
+                <div class="trust-item">
+                    <h3>You Choose the Terms</h3>
+                    <p>Use only what feels right to you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-background">
+            <img src="assets/img9.jpg" alt="Candlelight" class="section-bg">
+            <div class="section-gradient warm"></div>
+        </div>
+
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <span class="section-label">Ready to Begin?</span>
+                    <h2>Start Your First Language Session</h2>
+                    <p>Get supportive guidance and terms you can use right away.</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#chat" class="btn btn-primary">Start a Session</a>
+                    <a href="dictionary.html" class="btn btn-ghost">Explore the Dictionary</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">Womb-Inary</span>
+                    </div>
+                    <p>Clear language for complex feelings.</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <a href="index.html">Chat</a>
+                    <a href="dictionary.html">Dictionary</a>
+                    <a href="events.html">Events</a>
+                    <a href="rights.html">Rights</a>
+                    <a href="merch.html">Merch</a>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Womb-Inary. Word choice matters.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

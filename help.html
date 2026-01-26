@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Womb-inary | Help Us Create</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="help">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page">
+      <header class="nav">
+        <div class="container nav-inner">
+          <a class="logo" href="index.html">
+            <span class="logo-mark"></span>
+            Womb-inary
+          </a>
+          <nav class="nav-links">
+            <a href="index.html" data-page="chatbot">Chatbot</a>
+            <a href="dictionary.html" data-page="dictionary">Dictionary</a>
+            <a href="events.html" data-page="events">Events</a>
+            <a href="merch.html" data-page="merch">Merch</a>
+            <a href="help.html" data-page="help">Help us create</a>
+          </nav>
+          <a class="btn btn-primary" href="#submit">Submit a term</a>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero hero--help">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <div class="brand-chip">
+                <span class="logo-mark"></span>
+                Womb-inary
+                <span class="chip-label">Co-create the lexicon</span>
+              </div>
+              <h1>Help us create the language we all need.</h1>
+              <p class="lead">
+                Submit new terms, refine definitions, and shape the words that help people feel
+                understood.
+              </p>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="#submit">Submit a term</a>
+                <a class="btn btn-ghost" href="dictionary.html">Browse the dictionary</a>
+              </div>
+              <p class="hero-note">Community-first. Inclusive, non-clinical language only.</p>
+            </div>
+            <div class="hero-visual reveal">
+              <div class="hero-panel">
+                <p class="hero-panel-label">Contribution spotlight</p>
+                <p class="hero-panel-title">choicequieting</p>
+                <p class="hero-panel-note">
+                  The hush that follows when your choices are spoken over or dismissed.
+                </p>
+                <div class="chip-row">
+                  <span class="chip">agency</span>
+                  <span class="chip">boundaries</span>
+                  <span class="chip">respect</span>
+                </div>
+              </div>
+              <div class="hero-panel mini">
+                <p class="hero-panel-label">Community</p>
+                <p class="hero-panel-title">340 contributors</p>
+                <p class="hero-panel-note">Across 22 cities and online groups.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title reveal">
+              <h2>How it works</h2>
+              <p>We review each submission for clarity, inclusivity, and usefulness.</p>
+            </div>
+            <div class="how-grid">
+              <div class="how-card reveal">
+                <span class="step">01</span>
+                <h3>Submit a term</h3>
+                <p>Share the word, a plain definition, and anchor terms.</p>
+              </div>
+              <div class="how-card reveal">
+                <span class="step">02</span>
+                <h3>We refine together</h3>
+                <p>Editors verify the tone, safety, and clarity.</p>
+              </div>
+              <div class="how-card reveal">
+                <span class="step">03</span>
+                <h3>Publish and share</h3>
+                <p>New terms appear in the dictionary and community pulse.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section guidelines">
+          <div class="container">
+            <div class="section-title reveal">
+              <h2>Naming guidelines</h2>
+              <p>Keep language modern, respectful, and grounded in lived experience.</p>
+            </div>
+            <div class="guideline-grid">
+              <div class="guideline-card reveal">
+                <h3>Do</h3>
+                <ul>
+                  <li>Use plain-language definitions anyone can understand.</li>
+                  <li>Include 2 to 4 anchor terms for grounding.</li>
+                  <li>Focus on feelings, patterns, and experiences.</li>
+                  <li>Make it easy to say out loud.</li>
+                </ul>
+              </div>
+              <div class="guideline-card guideline-card--alt reveal">
+                <h3>Do not</h3>
+                <ul>
+                  <li>Use clinical or diagnostic language.</li>
+                  <li>Shame or blame people or communities.</li>
+                  <li>Use hateful, sexual, or derogatory terms.</li>
+                  <li>Overcomplicate the definition.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="submit" class="section">
+          <div class="container">
+            <div class="section-title reveal">
+              <h2>Submit a term</h2>
+              <p>Share your idea and we will follow up if we need clarity.</p>
+            </div>
+            <form class="contribute-form reveal">
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="term">Term name</label>
+                  <input id="term" type="text" placeholder="e.g., carewashing" />
+                </div>
+                <div class="form-field">
+                  <label for="anchors">Anchor terms</label>
+                  <input id="anchors" type="text" placeholder="e.g., trust, boundaries, overwhelm" />
+                </div>
+                <div class="form-field full">
+                  <label for="definition">Definition</label>
+                  <textarea
+                    id="definition"
+                    rows="4"
+                    placeholder="Describe the term in one or two sentences."
+                  ></textarea>
+                </div>
+                <div class="form-field">
+                  <label for="category">Category</label>
+                  <select id="category">
+                    <option>Care</option>
+                    <option>Culture</option>
+                    <option>Policy</option>
+                    <option>Work</option>
+                    <option>Identity</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="email">Email (optional)</label>
+                  <input id="email" type="email" placeholder="you@email.com" />
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Submit term</button>
+              <p class="form-note">We review submissions weekly. This is a demo form.</p>
+            </form>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title reveal">
+              <h2>Community spotlight</h2>
+              <p>Recent contributions from the Wombinary community.</p>
+            </div>
+            <div class="spotlight-grid">
+              <div class="spotlight-item reveal">
+                <h3>choicequieting</h3>
+                <p>The hush that follows when your choices are spoken over or dismissed.</p>
+                <span class="spotlight-tag">agency</span>
+              </div>
+              <div class="spotlight-item reveal">
+                <h3>carelooping</h3>
+                <p>Repeating the same care tasks until rest feels out of reach.</p>
+                <span class="spotlight-tag">care</span>
+              </div>
+              <div class="spotlight-item reveal">
+                <h3>policywhiplash</h3>
+                <p>The jolt that hits when guidance changes faster than you can adapt.</p>
+                <span class="spotlight-tag">policy</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section faq">
+          <div class="container">
+            <div class="section-title reveal">
+              <h2>Frequently asked questions</h2>
+              <p>Quick answers about how contributions work.</p>
+            </div>
+            <div class="faq-list">
+              <div class="faq-row reveal">
+                <h3>Who can submit a term?</h3>
+                <p>Anyone. We welcome lived experience, organizers, and practitioners.</p>
+              </div>
+              <div class="faq-row reveal">
+                <h3>Can I edit an existing definition?</h3>
+                <p>Yes. Use the form and note the term you want to improve.</p>
+              </div>
+              <div class="faq-row reveal">
+                <h3>How long does review take?</h3>
+                <p>Most reviews happen within one week for the demo.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section cta">
+          <div class="container">
+            <div class="cta-card reveal">
+              <div class="cta-copy">
+                <p class="eyebrow">Need inspiration?</p>
+                <h2>Try the chatbot and see what emerges.</h2>
+                <p>We only coin a term when it truly fits.</p>
+              </div>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="index.html">Start a session</a>
+                <a class="btn btn-ghost" href="dictionary.html">Browse dictionary</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div>
+            <div class="logo small">
+              <span class="logo-mark"></span>
+              Womb-inary
+            </div>
+            <p>Clear language for complex feelings.</p>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Chatbot</a>
+            <a href="dictionary.html">Dictionary</a>
+            <a href="events.html">Events</a>
+            <a href="merch.html">Merch</a>
+            <a href="help.html">Help us create</a>
+            <a href="mailto:hello@wombinary.ai">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

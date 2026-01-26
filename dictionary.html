@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lexicon | Womb-Inary.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Parchment Overlay -->
+    <div class="parchment-overlay"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="site-logo">Womb-Inary</a>
+            <nav class="site-nav">
+                <a href="index.html">Chat</a>
+                <a href="dictionary.html" class="active">Dictionary</a>
+                <a href="events.html">Events</a>
+                <a href="rights.html">Rights</a>
+                <a href="merch.html">Merch</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg">
+            <img src="assets/img5.jpg" alt="Dictionary" class="section-bg">
+            <div class="section-gradient"></div>
+        </div>
+        <div class="container">
+            <span class="section-label">The Wombinary</span>
+            <h1>The Lexicon</h1>
+            <p class="lead">Modern, inclusive language for experiences that deserve better words. Help us grow this living dictionary.</p>
+        </div>
+    </section>
+
+    <!-- Dictionary Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Search & Filters -->
+            <div class="dictionary-toolbar">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search the lexicon...">
+                <div class="filter-chips">
+                    <button class="filter-chip active" data-filter="all">All</button>
+                    <button class="filter-chip" data-filter="emotion">Emotion</button>
+                    <button class="filter-chip" data-filter="identity">Identity</button>
+                    <button class="filter-chip" data-filter="culture">Culture</button>
+                    <button class="filter-chip" data-filter="health">Health</button>
+                </div>
+            </div>
+
+            <!-- Results Count -->
+            <p class="result-count text-gold mb-lg" id="resultCount">Showing 15 terms</p>
+
+            <!-- Dictionary Grid -->
+            <div class="dictionary-grid" id="dictionaryGrid">
+                <!-- Row 1 -->
+                <div class="word-card" data-category="emotion">
+                    <h3>Loopspiraling</h3>
+                    <p class="definition">Replaying a moment until it grows larger than the moment itself.</p>
+                    <span class="word-tag">rumination</span>
+                </div>
+
+                <div class="word-card" data-category="culture">
+                    <h3>Carewashing</h3>
+                    <p class="definition">Performing care language without meaningful support or follow-through.</p>
+                    <span class="word-tag">culture</span>
+                </div>
+
+                <div class="word-card" data-category="identity">
+                    <h3>Birthgiver</h3>
+                    <p class="definition">Gender-neutral term for someone who gives birth, inclusive of all identities.</p>
+                    <span class="word-tag">identity</span>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="word-card" data-category="emotion">
+                    <h3>Scrollfreezing</h3>
+                    <p class="definition">Getting stuck in a feed even when you want to step away.</p>
+                    <span class="word-tag">attention</span>
+                </div>
+
+                <div class="word-card" data-category="emotion">
+                    <h3>Meetinglag</h3>
+                    <p class="definition">The cognitive fog that lingers after too many back-to-back calls.</p>
+                    <span class="word-tag">work</span>
+                </div>
+
+                <div class="word-card" data-category="health">
+                    <h3>Wombinary</h3>
+                    <p class="definition">An inclusive dictionary for reproductive and emotional experiences, centering diverse voices.</p>
+                    <span class="word-tag">health</span>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="word-card" data-category="identity">
+                    <h3>Moon-cycle</h3>
+                    <p class="definition">Menstruation reframed with natural imagery, honoring the body's rhythms.</p>
+                    <span class="word-tag">identity</span>
+                </div>
+
+                <div class="word-card" data-category="health">
+                    <h3>Bodily Autonomy</h3>
+                    <p class="definition">The fundamental right to make decisions about one's own body without external control.</p>
+                    <span class="word-tag">health</span>
+                </div>
+
+                <div class="word-card" data-category="emotion">
+                    <h3>Doomscrolling</h3>
+                    <p class="definition">Compulsively consuming negative news despite the emotional toll.</p>
+                    <span class="word-tag">emotion</span>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="word-card" data-category="culture">
+                    <h3>Emotional Labor</h3>
+                    <p class="definition">The invisible work of managing feelings and relationships, often unrecognized.</p>
+                    <span class="word-tag">culture</span>
+                </div>
+
+                <div class="word-card" data-category="emotion">
+                    <h3>Burnout</h3>
+                    <p class="definition">Complete physical, emotional, and mental exhaustion from prolonged stress.</p>
+                    <span class="word-tag">emotion</span>
+                </div>
+
+                <div class="word-card" data-category="identity">
+                    <h3>Chest-feeder</h3>
+                    <p class="definition">Gender-inclusive term for someone who nurses an infant, regardless of identity.</p>
+                    <span class="word-tag">identity</span>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="word-card" data-category="emotion">
+                    <h3>Anxiety Spiral</h3>
+                    <p class="definition">Escalating worry that feeds on itself, growing more intense with each thought.</p>
+                    <span class="word-tag">emotion</span>
+                </div>
+
+                <div class="word-card" data-category="culture">
+                    <h3>Gaslighting</h3>
+                    <p class="definition">Manipulating someone into questioning their own reality and perceptions.</p>
+                    <span class="word-tag">culture</span>
+                </div>
+
+                <div class="word-card" data-category="health">
+                    <h3>Reproductive Justice</h3>
+                    <p class="definition">The human right to have children, not have children, and parent in safe environments.</p>
+                    <span class="word-tag">health</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Term CTA -->
+    <section class="cta-section">
+        <div class="cta-background">
+            <img src="assets/img9.jpg" alt="Candlelight" class="section-bg">
+            <div class="section-gradient warm"></div>
+        </div>
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <span class="section-label">Contribute</span>
+                    <h2>Help Us Create the Lexicon</h2>
+                    <p>Have a word or experience that needs naming? Submit your term and help shape the language.</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="index.html#chat" class="btn btn-primary">Start a Session</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">Womb-Inary</span>
+                    </div>
+                    <p>Clear language for complex feelings.</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="index.html">Chat</a>
+                    <a href="dictionary.html">Dictionary</a>
+                    <a href="events.html">Events</a>
+                    <a href="rights.html">Rights</a>
+                    <a href="merch.html">Merch</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Womb-Inary. Word choice matters.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
