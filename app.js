@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const termCountEl = document.getElementById('termCount');
 
     if (chatForm && userInput && chatMessages) {
-        chatForm.addEventListener('submit', function(e) {
+        chatForm.addEventListener('submit', async function(e) {
             e.preventDefault();
 
             const message = userInput.value.trim();
@@ -169,21 +169,57 @@ document.addEventListener('DOMContentLoaded', function() {
             addMessage(message, 'user');
             userInput.value = '';
 
-            // Process and respond
-            setTimeout(() => {
+            // Show loading state
+            addMessage('Generating words for you...', 'ai', 'loading');
+
+            // Call OpenAI API
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message })
+                });
+
+                // Remove loading message
+                const loadingMsg = chatMessages.querySelector('.message.loading');
+                if (loadingMsg) loadingMsg.remove();
+
+                if (!response.ok) {
+                    throw new Error('API request failed');
+                }
+
+                const data = await response.json();
+                addMessage(data.message, 'ai');
+
+                // Search for matching terms in lexicon
+                const matchedTerms = searchLexiconTerms(message);
+                if (matchedTerms.length > 0) {
+                    updateTermSuggestions(matchedTerms);
+                }
+
+            } catch (error) {
+                console.error('Chat error:', error);
+
+                // Remove loading message
+                const loadingMsg = chatMessages.querySelector('.message.loading');
+                if (loadingMsg) loadingMsg.remove();
+
+                // Fallback to keyword matching
                 const response = generateResponse(message);
                 addMessage(response.text, 'ai');
 
                 if (response.terms.length > 0) {
                     updateTermSuggestions(response.terms);
                 }
-            }, 800);
+            }
         });
     }
 
-    function addMessage(text, type) {
+    function addMessage(text, type, className = '') {
         const messageDiv = document.createElement('div');
-        messageDiv.className = `message ${type}`;
+        messageDiv.className = `message ${type} ${className}`;
 
         const avatar = document.createElement('div');
         avatar.className = 'message-avatar';
@@ -199,6 +235,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Scroll to bottom
         chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function searchLexiconTerms(message) {
+        const lowerMessage = message.toLowerCase();
+        const matchedTerms = [];
+
+        for (const term of lexiconTerms) {
+            for (const keyword of term.keywords) {
+                if (lowerMessage.includes(keyword)) {
+                    if (!matchedTerms.includes(term.term)) {
+                        matchedTerms.push(term.term);
+                    }
+                    break;
+                }
+            }
+        }
+
+        return matchedTerms.slice(0, 3);
     }
 
     function generateResponse(message) {
