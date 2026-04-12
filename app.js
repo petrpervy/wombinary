@@ -6,147 +6,187 @@
 // ==================== Lexicon Data ====================
 const lexiconTerms = [
     {
+        term: "Ghostgrief",
+        definition: "Mourning someone who is still alive but has chosen distance.",
+        category: "loss",
+        keywords: ["miss", "missing", "gone", "distant", "apart", "estranged", "separated", "pulled away", "left", "friend", "family", "lost someone", "drifted"]
+    },
+    {
+        term: "Witnesshunger",
+        definition: "The longing to be truly seen in pain — not fixed, not advised, just seen.",
+        category: "connection",
+        keywords: ["alone", "lonely", "no one understands", "just listen", "seen", "heard", "invisible", "unheard", "nobody gets it", "want someone to understand"]
+    },
+    {
+        term: "Carryquiet",
+        definition: "The exhaustion of appearing fine while holding something enormous alone.",
+        category: "silence",
+        keywords: ["fine", "okay", "pretending", "hiding", "mask", "holding it together", "strong", "can't tell anyone", "no one knows", "silent", "carrying"]
+    },
+    {
+        term: "Mirrorfear",
+        definition: "Dreading that you've slowly become the person who once hurt you.",
+        category: "identity",
+        keywords: ["like my mother", "like my father", "turning into", "becoming", "same mistakes", "repeat", "cycle", "pattern", "afraid of myself", "hurting others"]
+    },
+    {
+        term: "Blankwanting",
+        definition: "Wanting something deeply without being able to name what it is.",
+        category: "longing",
+        keywords: ["don't know what I want", "something missing", "empty", "ache", "longing", "restless", "unfulfilled", "vague", "can't explain", "something wrong"]
+    },
+    {
+        term: "Holdthin",
+        definition: "Being depended on by others while having nothing left for yourself.",
+        category: "depletion",
+        keywords: ["nothing left", "empty", "everyone needs me", "drained", "depleted", "giving too much", "caregiver", "no energy", "exhausted", "for everyone else"]
+    },
+    {
         term: "Loopspiraling",
         definition: "Replaying a moment until it grows larger than the moment itself.",
-        category: "emotion",
-        keywords: ["overthinking", "anxiety", "worry", "rumination", "stuck", "thoughts"]
+        category: "rumination",
+        keywords: ["replaying", "can't stop thinking", "over and over", "replay", "loop", "argument", "conversation", "what I said", "what they said", "keep thinking about", "obsessing", "spiral", "stuck in my head"]
+    },
+    {
+        term: "Dimseason",
+        definition: "The stretch after a loss when ordinary things lose their color for a while.",
+        category: "grief",
+        keywords: ["grief", "loss", "nothing feels good", "flat", "grey", "muted", "after", "death", "ended", "broke up", "over", "numb", "color gone", "joyless"]
+    },
+    {
+        term: "Softexit",
+        definition: "Leaving a conversation before saying what you actually needed to say.",
+        category: "avoidance",
+        keywords: ["didn't say", "held back", "bit my tongue", "couldn't say it", "walked away", "left", "avoided", "didn't bring it up", "should have said", "conflict"]
+    },
+    {
+        term: "Kindtrap",
+        definition: "The difficulty of holding a limit with someone you deeply love.",
+        category: "relationships",
+        keywords: ["boundary", "can't say no", "feel guilty", "hate saying no", "people pleasing", "love them", "hurt them", "limit", "family", "don't want to disappoint"]
+    },
+    {
+        term: "Replydebt",
+        definition: "The guilt that grows around messages you've left unanswered too long.",
+        category: "connection",
+        keywords: ["haven't replied", "ghosted", "messages", "texts", "unanswered", "behind", "guilt", "avoiding", "inbox", "bad friend", "owe someone a call"]
+    },
+    {
+        term: "Wombmemory",
+        definition: "The body's residual awareness of a pregnancy that is no longer present.",
+        category: "body",
+        keywords: ["miscarriage", "pregnancy loss", "body remembers", "after pregnancy", "grief", "body", "postpartum", "loss", "child", "empty"]
+    },
+    {
+        term: "Cyclegrief",
+        definition: "The specific sadness that arrives on schedule, tied to the body's rhythm.",
+        category: "body",
+        keywords: ["period", "cycle", "PMS", "PMDD", "monthly", "hormones", "sad every month", "predictable", "menstrual", "before my period"]
     },
     {
         term: "Carewashing",
-        definition: "Performing care language without meaningful support or follow-through.",
+        definition: "Performing care language without meaningful follow-through.",
         category: "culture",
-        keywords: ["fake", "empty", "promises", "support", "disappointment"]
-    },
-    {
-        term: "Birthgiver",
-        definition: "Gender-neutral term for someone who gives birth, inclusive of all identities.",
-        category: "identity",
-        keywords: ["parent", "mother", "birth", "pregnancy", "inclusive"]
+        keywords: ["fake", "hollow", "empty words", "thoughts and prayers", "performative", "doesn't really care", "just saying it", "lip service", "support that isn't", "disappointed"]
     },
     {
         term: "Scrollfreezing",
         definition: "Getting stuck in a feed even when you want to step away.",
-        category: "emotion",
-        keywords: ["phone", "social media", "stuck", "distraction", "attention"]
+        category: "attention",
+        keywords: ["phone", "social media", "scrolling", "can't stop", "stuck", "instagram", "tiktok", "twitter", "doom", "wasting time", "distracted"]
     },
     {
         term: "Meetinglag",
         definition: "The cognitive fog that lingers after too many back-to-back calls.",
-        category: "emotion",
-        keywords: ["tired", "work", "exhausted", "zoom", "meetings", "fog"]
+        category: "depletion",
+        keywords: ["zoom", "calls", "meetings", "back to back", "fog", "can't think", "drained", "work", "tired", "exhausted after calls"]
     },
     {
-        term: "Wombinary",
-        definition: "An inclusive dictionary for reproductive and emotional experiences, centering diverse voices.",
-        category: "health",
-        keywords: ["dictionary", "words", "language", "inclusive"]
+        term: "Proximaburn",
+        definition: "The specific exhaustion of caring for someone whose pain you cannot fix.",
+        category: "depletion",
+        keywords: ["watching someone suffer", "can't help", "sick loved one", "caregiver", "powerless", "watching them struggle", "nothing I can do", "helpless", "their pain"]
     },
     {
-        term: "Moon-cycle",
-        definition: "Menstruation reframed with natural imagery, honoring the body's rhythms.",
+        term: "Feedhaze",
+        definition: "The dreamlike blurring of time spent in passive, joyless scrolling.",
+        category: "attention",
+        keywords: ["lost track of time", "hours passed", "scrolled", "dissociated", "zoned out", "on my phone", "time disappeared", "numbing", "mindless"]
+    },
+    {
+        term: "Birthgiver",
+        definition: "Gender-neutral term for one who gives birth, honoring all identities.",
         category: "identity",
-        keywords: ["period", "menstruation", "cycle", "body", "natural"]
+        keywords: ["parent", "mother", "birth", "pregnancy", "gave birth", "inclusive", "non-binary parent"]
     },
     {
-        term: "Bodily Autonomy",
-        definition: "The fundamental right to make decisions about one's own body without external control.",
-        category: "health",
-        keywords: ["rights", "choice", "body", "freedom", "control"]
-    },
-    {
-        term: "Doomscrolling",
-        definition: "Compulsively consuming negative news despite the emotional toll.",
-        category: "emotion",
-        keywords: ["news", "anxiety", "phone", "negative", "compulsive"]
-    },
-    {
-        term: "Emotional Labor",
-        definition: "The invisible work of managing feelings and relationships, often unrecognized.",
-        category: "culture",
-        keywords: ["work", "feelings", "invisible", "relationships", "exhausting"]
-    },
-    {
-        term: "Burnout",
-        definition: "Complete physical, emotional, and mental exhaustion from prolonged stress.",
-        category: "emotion",
-        keywords: ["tired", "exhausted", "stress", "overwhelmed", "done"]
-    },
-    {
-        term: "Chest-feeder",
-        definition: "Gender-inclusive term for someone who nurses an infant, regardless of identity.",
-        category: "identity",
-        keywords: ["nursing", "breastfeeding", "baby", "inclusive", "parent"]
-    },
-    {
-        term: "Anxiety Spiral",
-        definition: "Escalating worry that feeds on itself, growing more intense with each thought.",
-        category: "emotion",
-        keywords: ["worry", "panic", "fear", "thoughts", "escalating"]
-    },
-    {
-        term: "Gaslighting",
-        definition: "Manipulating someone into questioning their own reality and perceptions.",
-        category: "culture",
-        keywords: ["manipulation", "doubt", "crazy", "reality", "abuse"]
-    },
-    {
-        term: "Reproductive Justice",
-        definition: "The human right to have children, not have children, and parent in safe environments.",
-        category: "health",
-        keywords: ["rights", "children", "parenting", "choice", "justice"]
+        term: "Notifyjolt",
+        definition: "The spike of dread before opening a message you're not ready to receive.",
+        category: "anxiety",
+        keywords: ["scared to open", "afraid to check", "message waiting", "text", "email", "notification", "dreading", "bad news", "anxious about"]
     }
 ];
 
 // ==================== AI Responses ====================
 const aiResponses = [
     {
-        keywords: ["anxious", "anxiety", "worried", "worry", "nervous", "panic"],
-        response: "It sounds like you're experiencing anxiety. That tightness in your chest, the racing thoughts - they're real and valid. Would you like to explore some terms that might help name what you're going through?",
-        suggestedTerms: ["Loopspiraling", "Anxiety Spiral", "Doomscrolling"]
+        keywords: ["replay", "replaying", "loop", "overthink", "can't stop thinking", "argument", "over and over"],
+        response: "That sounds exhausting to carry.",
+        suggestedTerms: ["Loopspiraling"]
     },
     {
-        keywords: ["tired", "exhausted", "burned out", "overwhelmed", "drained"],
-        response: "Exhaustion runs deeper than just needing sleep. It sounds like you might be carrying a lot. Let me share some words that might resonate with what you're feeling.",
-        suggestedTerms: ["Burnout", "Emotional Labor", "Meetinglag"]
+        keywords: ["tired", "exhausted", "drained", "depleted", "nothing left", "everyone needs me"],
+        response: "Being needed and being supported are not the same thing.",
+        suggestedTerms: ["Holdthin", "Meetinglag"]
     },
     {
-        keywords: ["sad", "depressed", "down", "hopeless", "empty"],
-        response: "I hear you. Feeling low can be isolating, but you're not alone in this. Sometimes finding the right words helps us feel less alone. Here are some terms that might speak to your experience.",
-        suggestedTerms: ["Emotional Labor", "Burnout", "Loopspiraling"]
+        keywords: ["sad", "grief", "loss", "numb", "flat", "joyless", "after", "broke up"],
+        response: "Grief changes the texture of everything around it.",
+        suggestedTerms: ["Dimseason", "Ghostgrief"]
     },
     {
-        keywords: ["angry", "frustrated", "mad", "upset", "annoyed"],
-        response: "Your frustration is valid. Sometimes anger is our mind's way of protecting us from deeper hurts. Let me offer some language that might help process these feelings.",
-        suggestedTerms: ["Gaslighting", "Carewashing", "Emotional Labor"]
+        keywords: ["missing", "miss", "gone", "distant", "drifted", "grew apart"],
+        response: "Grief doesn't always need a death to be real.",
+        suggestedTerms: ["Ghostgrief"]
     },
     {
-        keywords: ["confused", "lost", "stuck", "uncertain", "unsure"],
-        response: "Feeling uncertain can be disorienting. It's okay not to have all the answers right now. Here are some terms that might help clarify what you're experiencing.",
-        suggestedTerms: ["Scrollfreezing", "Loopspiraling", "Anxiety Spiral"]
+        keywords: ["alone", "lonely", "no one understands", "invisible", "unheard"],
+        response: "You want presence, not a solution.",
+        suggestedTerms: ["Witnesshunger", "Carryquiet"]
     },
     {
-        keywords: ["pregnancy", "pregnant", "baby", "birth", "mother", "parent"],
-        response: "Reproductive experiences are deeply personal. The Wombinary exists to provide inclusive language for these journeys. Here are some terms you might find meaningful.",
-        suggestedTerms: ["Birthgiver", "Chest-feeder", "Bodily Autonomy", "Reproductive Justice"]
+        keywords: ["pretending", "fine", "hiding", "holding it together", "can't tell anyone"],
+        response: "There's a particular weight to being fine.",
+        suggestedTerms: ["Carryquiet"]
     },
     {
-        keywords: ["rights", "choice", "freedom", "body", "autonomy"],
-        response: "Bodily autonomy is a fundamental right. Understanding the language around reproductive justice can be empowering. Let me share some relevant terms.",
-        suggestedTerms: ["Bodily Autonomy", "Reproductive Justice", "Birthgiver"]
+        keywords: ["scroll", "scrolling", "phone", "feed", "social media", "instagram", "tiktok"],
+        response: "You know you want to stop, and yet.",
+        suggestedTerms: ["Scrollfreezing", "Feedhaze"]
     },
     {
-        keywords: ["period", "menstrual", "cycle", "menstruation"],
-        response: "Your body's natural rhythms deserve language that honors them. Here are some inclusive terms for menstrual experiences.",
-        suggestedTerms: ["Moon-cycle", "Bodily Autonomy", "Wombinary"]
+        keywords: ["guilt", "shame", "ashamed", "regret", "should have", "my fault"],
+        response: "Shame tends to outlast the moment that made it.",
+        suggestedTerms: ["Echoshame"]
+    },
+    {
+        keywords: ["period", "cycle", "pms", "pmdd", "hormones", "menstrual"],
+        response: "The body keeps its own calendar.",
+        suggestedTerms: ["Cyclegrief"]
+    },
+    {
+        keywords: ["pregnancy", "pregnant", "miscarriage", "baby", "birth", "postpartum"],
+        response: "The body holds what the mind is still trying to understand.",
+        suggestedTerms: ["Wombmemory", "Birthgiver"]
     },
     {
         keywords: ["hello", "hi", "hey", "help", "start"],
-        response: "Welcome to Womb-inary. I'm here to help you find the right words for what you're experiencing. Tell me how you're feeling - even if it's messy or complicated. There's no wrong way to start.",
+        response: "Welcome to Womb-inary. Tell me what's been on your mind — even if it's messy or hard to describe. That's exactly where we start.",
         suggestedTerms: []
     }
 ];
 
-const defaultResponse = "Thank you for sharing. Every feeling is valid, even when it's hard to put into words. That's what the Wombinary is here for - to help you find language that fits. Tell me more about what you're experiencing, or explore the terms I've suggested.";
+const defaultResponse = "Something's there, even if the shape isn't clear yet. Tell me more — we'll find the word together.";
 
 // ==================== Main Initialization ====================
 document.addEventListener('DOMContentLoaded', function() {
@@ -170,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
             userInput.value = '';
 
             // Show loading state
-            addMessage('Generating words for you...', 'ai', 'loading');
+            addMessage('Searching for the word that fits...', 'ai', 'loading');
 
             // Call OpenAI API
             try {
@@ -193,10 +233,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 const data = await response.json();
                 addMessage(data.message, 'ai');
 
-                // Search for matching terms in lexicon
-                const matchedTerms = searchLexiconTerms(message);
-                if (matchedTerms.length > 0) {
-                    updateTermSuggestions(matchedTerms);
+                // Parse coined words from AI response and populate sidebar
+                const coinedWords = parseAIWords(data.message);
+                if (coinedWords.length > 0) {
+                    updateTermSuggestionsFromAI(coinedWords);
+                    updateSubmitPanel(coinedWords[0]);
+                } else {
+                    // Fallback: match against existing lexicon
+                    const matchedTerms = searchLexiconTerms(message);
+                    if (matchedTerms.length > 0) {
+                        updateTermSuggestions(matchedTerms);
+                    }
                 }
 
             } catch (error) {
@@ -227,7 +274,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const content = document.createElement('div');
         content.className = 'message-content';
-        content.innerHTML = `<p>${text}</p>`;
+        // Parse markdown: **Word** — Definition → highlighted word with tooltip
+        // Captures definition after the dash so it can show on hover
+        const formatted = text
+            .replace(/\*\*([^*]+)\*\*\s*[—\-]\s*([^\n<]+)/g, (match, word, definition) => {
+                const safedef = definition.trim().replace(/"/g, '&quot;');
+                return `<span class="coined-word" data-definition="${safedef}">${word}</span> — ${definition.trim()}`;
+            })
+            // Handle any remaining **word** without a definition
+            .replace(/\*\*([^*]+)\*\*/g, '<span class="coined-word">$1</span>')
+            .replace(/\n/g, '<br>');
+        content.innerHTML = `<p>${formatted}</p>`;
 
         messageDiv.appendChild(avatar);
         messageDiv.appendChild(content);
@@ -491,6 +548,77 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.outline = 'none';
         });
     });
+
+    // ==================== Parse AI Coined Words ====================
+    // Extracts **Word** — Definition patterns from AI response
+    function parseAIWords(text) {
+        const words = [];
+        // Match **Word** — Definition (supports both — and -)
+        const regex = /\*\*([^*]+)\*\*\s*[—\-]\s*([^\n]+)/g;
+        let match;
+        while ((match = regex.exec(text)) !== null) {
+            words.push({
+                term: match[1].trim(),
+                definition: match[2].trim()
+            });
+        }
+        return words;
+    }
+
+    // ==================== Update Sidebar with AI Words ====================
+    function updateTermSuggestionsFromAI(words) {
+        if (!termSuggestions || !termCountEl) return;
+
+        termSuggestions.innerHTML = '';
+
+        words.forEach(word => {
+            const div = document.createElement('div');
+            div.className = 'term-suggestion ai-coined';
+            div.innerHTML = `
+                <h4>${word.term}</h4>
+                <p>${word.definition}</p>
+            `;
+            termSuggestions.appendChild(div);
+        });
+
+        termCountEl.textContent = `${words.length} coined`;
+    }
+
+    // ==================== Submit Panel ====================
+    function updateSubmitPanel(word) {
+        const panel = document.getElementById('submitPanelBody');
+        if (!panel) return;
+
+        panel.innerHTML = `
+            <div class="submit-word-preview">
+                <strong>${word.term}</strong>
+                <p>${word.definition}</p>
+            </div>
+            <button class="btn-submit-word" id="submitWordBtn">
+                Submit to Wombinary →
+            </button>
+            <p class="submit-note">Submitted words are reviewed before being added to the dictionary.</p>
+        `;
+
+        document.getElementById('submitWordBtn').addEventListener('click', () => {
+            handleWordSubmission(word);
+        });
+    }
+
+    function handleWordSubmission(word) {
+        const btn = document.getElementById('submitWordBtn');
+        if (!btn) return;
+
+        btn.textContent = 'Submitted ✓';
+        btn.disabled = true;
+        btn.classList.add('submitted');
+
+        // Log to console (replace with real API endpoint when ready)
+        console.log('[Wombinary Submission]', { term: word.term, definition: word.definition, timestamp: new Date().toISOString() });
+
+        // TODO: Replace with real submission endpoint
+        // fetch('/api/submit-word', { method: 'POST', body: JSON.stringify(word), headers: {'Content-Type':'application/json'} });
+    }
 
     console.log('✨ Womb-Inary.com loaded successfully');
 });

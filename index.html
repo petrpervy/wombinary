@@ -25,7 +25,7 @@
     <!-- Hero Section - Full Screen -->
     <section class="hero" id="home">
         <div class="hero-background">
-            <img src="assets/headbackground.png" alt="Womb-Inary Library" class="hero-bg-img">
+            <img src="assets/headbackground.jpeg" alt="Womb-Inary Library" class="hero-bg-img">
             <div class="hero-gradient"></div>
         </div>
 
@@ -42,7 +42,7 @@
 
             <!-- Tagline -->
             <p class="tagline">
-                <em>Word Choice Matters! Let's Play with Dic-tion.</em>
+                <em>I am the dictionary's mother.</em>
             </p>
 
             <!-- Navigation Buttons -->
@@ -86,8 +86,9 @@
 
         <div class="container">
             <div class="section-header">
-                <h2>Live Language Session</h2>
-                <p>Describe what you're feeling. We'll help you find the words.</p>
+                <span class="section-label">The Wombinary</span>
+                <h2>Tell me what you're carrying.</h2>
+                <p>There's no wrong way to start. The right word is waiting.</p>
             </div>
 
             <div class="chat-container">
@@ -111,7 +112,7 @@
 
                     <div class="chat-input-area">
                         <form id="chatForm" class="chat-form">
-                            <input type="text" id="userInput" placeholder="Describe how you're feeling..." autocomplete="off">
+                            <input type="text" id="userInput" placeholder="What are you carrying today..." autocomplete="off">
                             <button type="submit" class="send-button">
                                 <span>Send</span>
                                 <svg viewBox="0 0 24 24" width="18" height="18">
@@ -133,13 +134,13 @@
                         </div>
                     </div>
 
-                    <div class="sidebar-panel notes-panel">
+                    <div class="sidebar-panel submit-panel" id="submitPanel">
                         <div class="panel-header">
-                            <h3>Session Notes</h3>
-                            <span class="demo-badge">Demo</span>
+                            <h3>Submit to Wombinary</h3>
+                            <span class="demo-badge">New</span>
                         </div>
-                        <div class="panel-body">
-                            <p>You're always in control. We only surface words that might help you explain what's happening. This is not a diagnosis - just better language, with care.</p>
+                        <div class="panel-body" id="submitPanelBody">
+                            <p class="empty-state">A word coined in your session will appear here for submission.</p>
                         </div>
                     </div>
                 </aside>
@@ -163,39 +164,39 @@
 
             <div class="preview-grid">
                 <div class="word-card">
-                    <h3>Loopspiraling</h3>
-                    <p class="definition">Replaying a moment until it grows larger than the moment itself.</p>
-                    <span class="word-tag">rumination</span>
+                    <h3>Ghostgrief</h3>
+                    <p class="definition">Mourning someone who is still alive but has chosen distance.</p>
+                    <span class="word-tag">loss</span>
                 </div>
 
                 <div class="word-card">
-                    <h3>Carewashing</h3>
-                    <p class="definition">Performing care language without meaningful support or follow-through.</p>
-                    <span class="word-tag">culture</span>
+                    <h3>Witnesshunger</h3>
+                    <p class="definition">The longing to be truly seen in pain — not fixed, not advised, just seen.</p>
+                    <span class="word-tag">connection</span>
                 </div>
 
                 <div class="word-card">
-                    <h3>Birthgiver</h3>
-                    <p class="definition">Gender-neutral term for someone who gives birth, inclusive of all identities.</p>
+                    <h3>Carryquiet</h3>
+                    <p class="definition">The exhaustion of appearing fine while holding something enormous alone.</p>
+                    <span class="word-tag">silence</span>
+                </div>
+
+                <div class="word-card">
+                    <h3>Mirrorfear</h3>
+                    <p class="definition">Dreading that you've slowly become the person who once hurt you.</p>
                     <span class="word-tag">identity</span>
                 </div>
 
                 <div class="word-card">
-                    <h3>Scrollfreezing</h3>
-                    <p class="definition">Getting stuck in a feed even when you want to step away.</p>
-                    <span class="word-tag">attention</span>
+                    <h3>Blankwanting</h3>
+                    <p class="definition">Wanting something deeply without being able to name what it is.</p>
+                    <span class="word-tag">longing</span>
                 </div>
 
                 <div class="word-card">
-                    <h3>Emotional Labor</h3>
-                    <p class="definition">The invisible work of managing feelings and relationships, often unrecognized.</p>
-                    <span class="word-tag">culture</span>
-                </div>
-
-                <div class="word-card">
-                    <h3>Burnout</h3>
-                    <p class="definition">Complete physical, emotional, and mental exhaustion from prolonged stress.</p>
-                    <span class="word-tag">emotion</span>
+                    <h3>Holdthin</h3>
+                    <p class="definition">Being depended on by others while having nothing left for yourself.</p>
+                    <span class="word-tag">depletion</span>
                 </div>
             </div>
 
